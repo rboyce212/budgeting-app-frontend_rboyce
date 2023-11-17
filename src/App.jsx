@@ -1,9 +1,10 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 import NavBar from "./components/NavBar.jsx";
-import Details from "./pages/Details";
-import List from "./pages/List";
-import AddInfo from "./pages/AddInfo";
+import Edit from "./pages/Edit.jsx";
+import Show from "./pages/Show.jsx";
+import New from "./pages/New.jsx";
+import Index from "./pages/Index";
 
 function App() {
   return (
@@ -12,9 +13,12 @@ function App() {
         <Router>
           <NavBar />
           <Routes>
-            <Route path="/" element={<List />} />
-            <Route path="/add" element={<AddInfo />} />
-            <Route path="/details/:id" element={<Details />} />
+            <Route path="/" element={<Home />} />
+            <Route path="/transactions" element={<Index />} />
+            <Route path="transactions/new" element={<New />} />
+            <Route path="transactions/:index" element={<Show />} />
+            <Route path="transactions/:index/edit" element={<Edit />} />
+            <Route path="*" element={<Error />} />
           </Routes>
         </Router>
       </div>

@@ -2,6 +2,8 @@ import "../styles/transactionCard.css";
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 
+console.log(TransactionCard);
+
 export default function TransactionCard({ id, item_name, amount, date }) {
   return (
     <div className="transaction-card">
@@ -19,7 +21,7 @@ export default function TransactionCard({ id, item_name, amount, date }) {
 }
 
 TransactionCard.propTypes = {
-  id: PropTypes.number.isRequired,
+  id: PropTypes.string.isRequired,
   item_name: PropTypes.string.isRequired,
   amount: PropTypes.number.isRequired,
   date: PropTypes.string.isRequired,

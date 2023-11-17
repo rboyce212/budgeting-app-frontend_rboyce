@@ -67,3 +67,10 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #590101; /* Add desired background color */
+}

@@ -1,8 +1,8 @@
 import TransactionDetails from "../components/TransactionDetails";
 
-export default function Details() {
+export default function List() {
   return (
-    <div className="Details">
+    <div className="details">
       <TransactionDetails />
     </div>
   );

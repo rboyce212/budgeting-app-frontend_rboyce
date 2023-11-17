@@ -5,6 +5,8 @@ import Edit from "./pages/Edit.jsx";
 import Show from "./pages/Show.jsx";
 import New from "./pages/New.jsx";
 import Index from "./pages/Index";
+import Error from "./pages/Error";
+import Home from "./pages/Home";
 
 function App() {
   return (

@@ -1,3 +1,5 @@
+import NavBar from "../components/NavBar";
+
 export default function Hone() {
   return (
     <div className="home">

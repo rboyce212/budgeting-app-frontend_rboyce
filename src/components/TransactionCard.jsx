@@ -2,8 +2,6 @@ import "../styles/transactionCard.css";
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 
-console.log(TransactionCard);
-
 export default function TransactionCard({ id, item_name, amount, date }) {
   return (
     <div className="transaction-card">

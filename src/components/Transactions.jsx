@@ -38,7 +38,7 @@ export default function Transactions() {
             </tr>
           </thead>
           <tbody>
-            {transactions.map((item) => {
+            {transactions.map((item) => (
               <tr key={item.id}>
                 <td>
                   <Link to={`/transactions/${item.id}`}>{item.date}</Link>
@@ -48,8 +48,8 @@ export default function Transactions() {
                 <td>{item.from}</td>
                 <td>{item.amount}</td>
                 <td>{item.category}</td>
-              </tr>;
-            })}
+              </tr>
+            ))}
           </tbody>
         </table>
       </div>

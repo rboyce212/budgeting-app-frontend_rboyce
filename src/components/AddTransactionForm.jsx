@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-// const API = import.meta.env.VITE_BASE_URL;
+const API = import.meta.env.VITE_BASE_URL;
 
 export default function AddTransactionForm() {
   const navigate = useNavigate();
@@ -24,20 +24,20 @@ export default function AddTransactionForm() {
 
   useEffect(() => {
     if (flag) {
-      fetch('http://localhost:3779', {
+      fetch(`${API}/transactions`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(transaction),
       })
         .then(() => {
-            setTransaction(initialTransactionState); // reset form
-            setFlag(false);
-            navigate("/");  // redirect or update
+          setTransaction(initialTransactionState); // reset form
+          setFlag(false);
+          navigate("/"); // redirect or update
         })
         .catch((error) => {
-            // handle error
-            console.error('Error:', error);
-            setFlag(false);
+          // handle error
+          console.error("Error:", error);
+          setFlag(false);
         });
     }
   }, [flag, navigate, transaction, initialTransactionState]);

@@ -6,7 +6,7 @@ export default function NavBar() {
     <header>
       <nav className="navbar">
         <Link to="/transactions" className="transaction-title">
-          Budgter App{" "}
+          Budget App{" "}
         </Link>
         <button className="navbar-button">
           <Link to="/add" className="navbar-new-transaction">

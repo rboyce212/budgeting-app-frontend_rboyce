@@ -2,11 +2,11 @@
 
 Budgtr is an application where people can log their financial transactions.
 
-![] [Back End Repo](https://github.com/rboyce212/budgeting-app-backend_rboyce)
+[Back End Repo](https://github.com/rboyce212/budgeting-app-backend_rboyce)
 
-![] [Back End Deployed URL](https://budget-api-4ic1.onrender.com/)
+[Back End Deployed URL](https://budget-api-4ic1.onrender.com/)
 
-![] [Front End Repo](https://github.com/rboyce212/budgeting-app-frontend_rboyce/edit/main/README.md)
+[Front End Repo](https://github.com/rboyce212/budgeting-app-frontend_rboyce/edit/main/README.md)
 
 ## Completion
 
